@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 
-import { BaThemeSpinnerService } from './core/services';
+import { BaThemeSpinnerService } from '../core/services';
 
 @Component({
   selector: 'app-root',

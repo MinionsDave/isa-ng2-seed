@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
 
+import { AppComponent } from './app.component';
+
 import {
   BaThemeSpinnerService
 } from './services';
@@ -13,6 +15,8 @@ import {
   providers: [
     BaThemeSpinnerService
   ],
-  declarations: []
+  declarations: [
+    AppComponent
+  ]
 })
 export class CoreModule { }
