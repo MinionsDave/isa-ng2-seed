@@ -4,12 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'pages',
     pathMatch: 'full'
   },
   {
     path: 'login',
     loadChildren: 'app/login/login.module#LoginModule'
+  }, {
+    path: '**',
+    redirectTo: 'pages'
   }
 ];
 
