@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 
-import { BaThemeSpinnerService } from './core/services';
+import { SpinnerService } from './core/services';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ export class AppComponent implements AfterViewInit {
 
   title = 'app works!';
 
-  constructor(private _spinner: BaThemeSpinnerService) {
+  constructor(private _spinner: SpinnerService) {
 
   }
 

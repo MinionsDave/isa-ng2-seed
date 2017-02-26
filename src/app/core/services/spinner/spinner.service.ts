@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class BaThemeSpinnerService {
+export class SpinnerService {
 
   private _selector = 'preloader';
   private _element: HTMLElement;

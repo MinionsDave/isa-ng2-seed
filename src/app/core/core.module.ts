@@ -7,7 +7,7 @@ import {
 import { SharedModule } from '../shared/shared.module';
 
 import {
-  BaThemeSpinnerService
+  SpinnerService
 } from './services';
 
 @NgModule({
@@ -15,7 +15,7 @@ import {
     SharedModule
   ],
   providers: [
-    BaThemeSpinnerService
+    SpinnerService
   ]
 })
 
