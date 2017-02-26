@@ -5,9 +5,6 @@ import {
 } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
-import { CoreRoutingModule } from './core-routing.module';
-
-import { AppComponent } from './app.component';
 
 import {
   BaThemeSpinnerService
@@ -15,14 +12,10 @@ import {
 
 @NgModule({
   imports: [
-    SharedModule,
-    CoreRoutingModule
+    SharedModule
   ],
   providers: [
     BaThemeSpinnerService
-  ],
-  declarations: [
-    AppComponent
   ]
 })
 
