@@ -3,10 +3,12 @@ import { SharedModule } from '../shared';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages/pages.component';
+import { HeadbarComponent } from './headbar/headbar.component';
 
 @NgModule({
   declarations: [
-    PagesComponent
+    PagesComponent,
+    HeadbarComponent
   ],
   imports: [
     SharedModule,

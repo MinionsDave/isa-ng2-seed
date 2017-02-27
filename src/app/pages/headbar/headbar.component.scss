@@ -1,0 +1,20 @@
+:host {
+  width: inherit;
+}
+
+.headbar {
+  background-color: #282828;
+  position: fixed;
+  top: 0;
+  height: 66px;
+  width: inherit;
+  padding: 0 32px 0 40px;
+
+  .logo {
+    display: block;
+    font-size: 24px;
+    white-space: nowrap;
+    float: left;
+    line-height: 60px;
+  }
+}
