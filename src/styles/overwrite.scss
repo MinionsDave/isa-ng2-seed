@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .isaqa {
   a {
     cursor: pointer;
@@ -9,12 +10,38 @@
   }
 
   .dropdown-menu {
+    top: 70px;
+
     li {
       a, a:hover, a:focus {
         color: #7d7d7d;
 
         i {
           margin-right: 10px;
+        }
+      }
+
+      i.dropdown-arr {
+        position: absolute;
+        top: -22px;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.15);
+        right: 42px;
+
+        &::after {
+          top: -9px;
+          left: 0;
+          margin-left: -10px;
+          content: " ";
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          border: 10px solid transparent;
+          border-bottom-color: #fff;
         }
       }
     }
