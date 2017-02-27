@@ -1,0 +1,22 @@
+.isaqa {
+  a {
+    cursor: pointer;
+    color: $primary;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .dropdown-menu {
+    li {
+      a, a:hover, a:focus {
+        color: #7d7d7d;
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

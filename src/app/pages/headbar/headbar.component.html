@@ -1,6 +1,31 @@
 <div class="headbar">
   <a class="logo">
-    <i class="iconfont icon-message"></i>
     <span>isa</span>-ng2-seed
   </a>
+  <app-icon name="list" class="collapse-menu-link" size="25"></app-icon>
+  <div class="user-profile pull-right" dropdown>
+    <a>
+      <img src="assets/images/head.jpg" class="img-circle" dropdownToggle>
+    </a>
+    <ul dropdownMenu role="menu" aria-labelledby="single-button">
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">
+            <app-icon name="user"></app-icon>
+            账户
+          </a>
+      </li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">
+            <app-icon name="shezhi"></app-icon>
+            设置
+          </a>
+      </li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">
+            <app-icon name="del"></app-icon>
+            注销
+          </a>
+      </li>
+    </ul>
+  </div>
 </div>

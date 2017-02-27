@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 :host {
   width: inherit;
 }
@@ -16,5 +18,35 @@
     white-space: nowrap;
     float: left;
     line-height: 60px;
+    color: #fff;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary;
+    }
+
+    span {
+      color: $primary;
+    }
+  }
+
+  .collapse-menu-link {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 20px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #e7ba08;
+    }
+  }
+
+  .user-profile {
+    img {
+      width: 45px;
+      height: 45px;
+      margin-top: 10px;
+    }
   }
 }
