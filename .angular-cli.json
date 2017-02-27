@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "styles/styles.scss",
-        "../node_modules/bootstrap/scss/bootstrap.scss"
+        "../node_modules/bootstrap/scss/bootstrap.scss",
+        "./assets/fonts/iconfont.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
