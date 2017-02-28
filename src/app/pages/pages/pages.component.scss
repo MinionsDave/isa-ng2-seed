@@ -2,7 +2,9 @@ main {
   min-height: 100%;
   background-color: #363636;
 
-  .container {
-    min-height: 100%;
+  .pages {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
   }
 }

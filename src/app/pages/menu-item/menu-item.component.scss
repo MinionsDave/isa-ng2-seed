@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+
+li {
+  a {
+    padding-left: 18px;
+    color: #fff;
+    font-size: 13px;
+    transition: color 0.2s ease;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+
+    i {
+      margin-right: 18px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &.selected {
+    background-color: $primary;
+
+    a:hover {
+      color: #fff;
+    }
+  }
+}
