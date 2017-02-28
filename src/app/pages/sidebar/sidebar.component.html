@@ -1,5 +1,7 @@
 <div class="sidebar">
   <ul class="list list-unstyled">
-    <app-menu-item *ngFor="let item of [1, 2, 3]"></app-menu-item>
+    <app-menu-item
+      *ngFor="let item of menus"
+      [item]="item"></app-menu-item>
   </ul>
 </div>

@@ -1,6 +1,21 @@
-<li>
-  <a href="">
-    <i class="iconfont icon-home"></i>
-    首页
+<li class="menu">
+  <a (click)="toggle()">
+    <i
+      class="fa fa-fw"
+      [ngClass]="item.icon"></i>
+    {{ item.title }}
+    <i
+      class="fa down"
+      [ngClass]="{'fa-angle-down': item.expanded, 'fa-angle-up': !item.expanded}"
+      *ngIf="item.children"></i>
   </a>
+  <ul
+    *ngIf="item.children && item.expanded"
+    class="list-unstyled">
+    <li *ngFor="let item of item.children">
+      <a>
+        {{ item.title }}
+      </a>
+    </li>
+  </ul>
 </li>
