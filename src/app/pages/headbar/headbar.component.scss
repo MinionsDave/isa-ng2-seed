@@ -34,9 +34,10 @@
   .collapse-menu-link {
     cursor: pointer;
     display: inline-block;
-    margin-top: 16px;
+    margin-top: 21px;
     margin-left: 20px;
     transition: color 0.2s ease;
+    font-size: 20px;
 
     &:hover {
       color: #e7ba08;
