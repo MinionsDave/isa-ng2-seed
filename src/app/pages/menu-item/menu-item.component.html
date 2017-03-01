@@ -1,5 +1,5 @@
 <li class="menu">
-  <a (click)="toggle()">
+  <a (click)="toggle($event)">
     <i
       class="fa fa-fw"
       [ngClass]="item.icon"></i>
@@ -10,7 +10,7 @@
       *ngIf="item.children"></i>
   </a>
   <ul
-    *ngIf="item.children && item.expanded"
+    *ngIf="item.children"
     class="list-unstyled">
     <li *ngFor="let item of item.children">
       <a>

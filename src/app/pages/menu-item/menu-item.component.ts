@@ -13,8 +13,9 @@ export class MenuItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggle() {
-    if (this.item.children) return this.item.expanded = !this.item.expanded;
+  toggle(ev) {
+    const submenu = $(ev.currentTarget).next();
+    if (this.item.children) return submenu.slideToggle();
   }
 
 }
