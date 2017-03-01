@@ -23,6 +23,28 @@ li.menu {
       }
     }
 
+    &.expanded {
+      i.down {
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); /* Internet Explorer */
+        -moz-transform:rotate(180deg); /* Firefox */
+        -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+        -o-transform:rotate(180deg); /* Opera */
+        transition: transform 0.2s linear;
+      }
+    }
+
+    &.shrink {
+      i.down {
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg); /* Internet Explorer */
+        -moz-transform:rotate(360deg); /* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+        -o-transform:rotate(360deg); /* Opera */
+        transition: transform 0.2s linear;
+      }
+    }
+
     &:hover {
       color: $primary;
     }
@@ -37,6 +59,8 @@ li.menu {
   }
 
   ul {
+    display: none;
+
     li {
       a {
         padding-left: 56px;

@@ -1,12 +1,11 @@
 <li class="menu">
-  <a (click)="toggle($event)">
+  <a (click)="toggle($event)" [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
     <i
       class="fa fa-fw"
       [ngClass]="item.icon"></i>
     {{ item.title }}
     <i
-      class="fa down"
-      [ngClass]="{'fa-angle-down': item.expanded, 'fa-angle-up': !item.expanded}"
+      class="fa down fa-angle-down"
       *ngIf="item.children"></i>
   </a>
   <ul

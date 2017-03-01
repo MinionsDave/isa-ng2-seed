@@ -15,7 +15,10 @@ export class MenuItemComponent implements OnInit {
 
   toggle(ev) {
     const submenu = $(ev.currentTarget).next();
-    if (this.item.children) return submenu.slideToggle();
+    if (this.item.children) {
+      submenu.slideToggle();
+      this.item.expanded = !this.item.expanded;
+    }
   }
 
 }
