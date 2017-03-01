@@ -69,7 +69,7 @@
     webpack-merge "^2.4.0"
     zone.js "^0.7.2"
 
-"@angular/common@^2.4.0":
+"@angular/common@^2.3.1", "@angular/common@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/common/download/@angular/common-2.4.8.tgz#e45a77a9d852c8e7135053ff38cf805435458c48"
 
@@ -81,31 +81,31 @@
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@>=2.3.1 <5.0.0", "@angular/compiler@^2.4.0":
+"@angular/compiler@>=2.3.1 <5.0.0", "@angular/compiler@^2.3.1", "@angular/compiler@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/compiler/download/@angular/compiler-2.4.8.tgz#fa788fc8bed9f322b040af2b9a06a70991390e23"
 
-"@angular/core@>=2.3.1 <5.0.0", "@angular/core@^2.4.0":
+"@angular/core@>=2.3.1 <5.0.0", "@angular/core@^2.3.1", "@angular/core@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-2.4.8.tgz#bf1a4fc324827516e6c3222047a9b2cbdaee6976"
 
-"@angular/forms@^2.4.0":
+"@angular/forms@^2.3.1", "@angular/forms@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/forms/download/@angular/forms-2.4.8.tgz#51512a801aaf3a1eba7bce2b22694537b93f047f"
 
-"@angular/http@^2.4.0":
+"@angular/http@^2.3.1", "@angular/http@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/http/download/@angular/http-2.4.8.tgz#e81ac8e4db836ed813edc4ffa137596cd5836baf"
 
-"@angular/platform-browser-dynamic@^2.4.0":
+"@angular/platform-browser-dynamic@^2.3.1", "@angular/platform-browser-dynamic@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-2.4.8.tgz#86059fe930489d1ca0056a5aba0b4420414759f5"
 
-"@angular/platform-browser@^2.4.0":
+"@angular/platform-browser@^2.3.1", "@angular/platform-browser@^2.4.0":
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/@angular/platform-browser/download/@angular/platform-browser-2.4.8.tgz#686bc82d9188e354181699640777237ed79122ed"
 
-"@angular/router@^3.4.0":
+"@angular/router@^3.3.1", "@angular/router@^3.4.0":
   version "3.4.8"
   resolved "http://registry.npm.taobao.org/@angular/router/download/@angular/router-3.4.8.tgz#d569099359848a3f708df87f685c98d37621ab97"
 
@@ -132,9 +132,15 @@
   version "2.5.38"
   resolved "http://registry.npm.taobao.org/@types/jasmine/download/@types/jasmine-2.5.38.tgz#a4379124c4921d4e21de54ec74669c9e9b356717"
 
-"@types/jquery@^2.0.40":
+"@types/jquery@*", "@types/jquery@^2.0.40":
   version "2.0.40"
   resolved "http://registry.npm.taobao.org/@types/jquery/download/@types/jquery-2.0.40.tgz#acdd69e29b74cdec15dc3c074bcb064bc1b87213"
+
+"@types/mcustomscrollbar@^2.8.30":
+  version "2.8.30"
+  resolved "http://registry.npm.taobao.org/@types/mcustomscrollbar/download/@types/mcustomscrollbar-2.8.30.tgz#cff2b214f746ed0b1f6d330a3a9cfa16b3f401d8"
+  dependencies:
+    "@types/jquery" "*"
 
 "@types/node@^6.0.46", "@types/node@~6.0.60":
   version "6.0.63"
@@ -2524,6 +2530,14 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
+jquery-mousewheel@>=3.0.6:
+  version "3.1.13"
+  resolved "http://registry.npm.taobao.org/jquery-mousewheel/download/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
+
+jquery@^2.2.4:
+  version "2.2.4"
+  resolved "http://registry.npm.taobao.org/jquery/download/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
 jquery@^3.1.1:
   version "3.1.1"
   resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
@@ -2848,6 +2862,12 @@ make-error@^1.1.1:
   version "1.2.1"
   resolved "http://registry.npm.taobao.org/make-error/download/make-error-1.2.1.tgz#9a6dfb4844423b9f145806728d05c6e935670e75"
 
+malihu-custom-scrollbar-plugin@^3.1.5:
+  version "3.1.5"
+  resolved "http://registry.npm.taobao.org/malihu-custom-scrollbar-plugin/download/malihu-custom-scrollbar-plugin-3.1.5.tgz#310cecc5e59415a1c29e9dfb5d2b6e01d66a29ef"
+  dependencies:
+    jquery-mousewheel ">=3.0.6"
+
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/map-obj/download/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
@@ -3010,6 +3030,26 @@ ng2-bootstrap@^1.3.3:
   resolved "http://registry.npm.taobao.org/ng2-bootstrap/download/ng2-bootstrap-1.3.3.tgz#2c66781d2e4d4620237bd455250105dab97ee94f"
   dependencies:
     moment "2.17.1"
+
+ngx-malihu-scrollbar@^0.0.1:
+  version "0.0.1"
+  resolved "http://registry.npm.taobao.org/ngx-malihu-scrollbar/download/ngx-malihu-scrollbar-0.0.1.tgz#c00a9f1e1e9555fcfcbbcce10916c57914fcff21"
+  dependencies:
+    "@angular/common" "^2.3.1"
+    "@angular/compiler" "^2.3.1"
+    "@angular/core" "^2.3.1"
+    "@angular/forms" "^2.3.1"
+    "@angular/http" "^2.3.1"
+    "@angular/platform-browser" "^2.3.1"
+    "@angular/platform-browser-dynamic" "^2.3.1"
+    "@angular/router" "^3.3.1"
+    "@types/mcustomscrollbar" "^2.8.30"
+    core-js "^2.4.1"
+    jquery "^2.2.4"
+    malihu-custom-scrollbar-plugin "^3.1.5"
+    rxjs "^5.0.1"
+    ts-helpers "^1.1.1"
+    zone.js "^0.7.2"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -4618,6 +4658,10 @@ trim-newlines@^1.0.0:
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/trim-right/download/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
+
+ts-helpers@^1.1.1:
+  version "1.1.2"
+  resolved "http://registry.npm.taobao.org/ts-helpers/download/ts-helpers-1.1.2.tgz#fc69be9f1f3baed01fb1a0ef8d4cfe748814d835"
 
 ts-node@~2.0.0:
   version "2.0.0"

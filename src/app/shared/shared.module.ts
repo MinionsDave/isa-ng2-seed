@@ -3,19 +3,22 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { DropdownModule } from 'ng2-bootstrap';
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    DropdownModule.forRoot()
+    DropdownModule.forRoot(),
+    MalihuScrollbarModule.forRoot()
   ],
   exports: [
     CommonModule,
     FormsModule,
     DropdownModule,
-    IconComponent
+    IconComponent,
+    MalihuScrollbarModule
   ],
   declarations: [IconComponent]
 })

@@ -22,10 +22,11 @@
         "styles/styles.scss",
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "./assets/fonts/iconfont.css"
+        "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

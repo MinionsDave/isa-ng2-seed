@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 import { PAGES_MENU } from './sidebar.constant';
 
@@ -7,12 +8,13 @@ import { PAGES_MENU } from './sidebar.constant';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent implements AfterViewInit {
   menus = PAGES_MENU;
 
-  constructor() { }
+  constructor(private malihuScrollbarService: MalihuScrollbarService) { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.malihuScrollbarService.initScrollbar('#sidebar', {axis: 'y', theme: 'minimal'});
+    $('#sidebar .mCSB_dragger_bar').css('margin-right', 0);
   }
-
 }
