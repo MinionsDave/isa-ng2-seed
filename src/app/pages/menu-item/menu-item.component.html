@@ -1,4 +1,4 @@
-<li class="menu">
+<li class="menu" [routerLink]="item.path" routerLinkActive="selected">
   <a (click)="toggle($event)" [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
     <i
       class="fa fa-fw"
@@ -11,7 +11,7 @@
   <ul
     *ngIf="item.children"
     class="list-unstyled">
-    <li *ngFor="let item of item.children">
+    <li *ngFor="let item of item.children" [routerLink]="item.path" routerLinkActive="selected">
       <a>
         {{ item.title }}
       </a>

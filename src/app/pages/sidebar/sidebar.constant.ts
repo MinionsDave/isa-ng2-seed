@@ -1,8 +1,8 @@
 export const PAGES_MENU = [
   {
     title: '首页',
-    path: 'dashboard',
-    icon: 'fa-home'
+    path: '/pages/dashboard',
+    icon: 'fa-home',
   },
   {
     title: '表格',
@@ -11,15 +11,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -30,15 +30,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -49,15 +49,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -68,15 +68,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -87,15 +87,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -106,15 +106,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -125,15 +125,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -144,15 +144,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -163,15 +163,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   },
@@ -182,15 +182,15 @@ export const PAGES_MENU = [
     children: [
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       },
       {
         title: '智能表格',
-        path: '智能表格'
+        path: '/znbg'
       }
     ]
   }
