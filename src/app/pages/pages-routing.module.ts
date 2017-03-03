@@ -15,11 +15,17 @@ const routes: Routes = [
       },
       {
         path: 'dashboard',
-        loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule'
+        loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule',
+        data: {
+          title: '首页'
+        }
       },
       {
         path: 'tables',
-        loadChildren: 'app/pages/tables/tables.module#TablesModule'
+        loadChildren: 'app/pages/tables/tables.module#TablesModule',
+        data: {
+          title: '表格'
+        }
       }
     ]
   }
