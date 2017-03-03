@@ -5,7 +5,7 @@ li.menu {
 
   a {
     padding-left: 18px;
-    color: #fff;
+    color: $color-default;
     font-size: 13px;
     transition: color 0.2s ease;
     display: block;
@@ -54,7 +54,7 @@ li.menu {
     background-color: $primary;
 
     a:hover {
-      color: #fff;
+      color: $color-default;
     }
   }
 
@@ -75,6 +75,6 @@ li.selected {
     background-color: $primary;
 
     a:hover {
-      color: #fff;
+      color: $color-default;
     }
   }

@@ -7,7 +7,6 @@ import {
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 import { PAGES_MENU } from './sidebar.constant';
-import { MenuItemComponent } from '../menu-item/menu-item.component';
 
 @Component({
   selector: 'app-sidebar',

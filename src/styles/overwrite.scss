@@ -4,7 +4,8 @@
     cursor: pointer;
     color: $primary;
 
-    &:hover {
+    &:hover, &:focus {
+      color: $primary;
       text-decoration: none;
     }
   }
@@ -41,7 +42,7 @@
           width: 0;
           height: 0;
           border: 10px solid transparent;
-          border-bottom-color: #fff;
+          border-bottom-color: $color-default;
         }
       }
     }
