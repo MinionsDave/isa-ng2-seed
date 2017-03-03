@@ -1,4 +1,25 @@
-<li class="menu" [routerLink]="item.path" routerLinkActive="selected">
+<li class="menu" *ngIf="item.path" [routerLink]="item.path" routerLinkActive="selected">
+  <a (click)="toggle($event)" [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
+    <i
+      class="fa fa-fw"
+      [ngClass]="item.icon"></i>
+    {{ item.title }}
+    <i
+      class="fa down fa-angle-down"
+      *ngIf="item.children"></i>
+  </a>
+  <ul
+    *ngIf="item.children"
+    class="list-unstyled">
+    <li *ngFor="let item of item.children" [routerLink]="item.path" routerLinkActive="selected">
+      <a>
+        {{ item.title }}
+      </a>
+    </li>
+  </ul>
+</li>
+
+<li *ngIf="!item.path" class="menu">
   <a (click)="toggle($event)" [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
     <i
       class="fa fa-fw"

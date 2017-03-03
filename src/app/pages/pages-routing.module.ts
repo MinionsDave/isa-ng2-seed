@@ -16,6 +16,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'tables',
+        loadChildren: 'app/pages/tables/tables.module#TablesModule'
       }
     ]
   }
