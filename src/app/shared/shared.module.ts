@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DropdownModule } from 'ng2-bootstrap';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
@@ -22,7 +22,8 @@ import { CardComponent } from './card/card.component';
     IconComponent,
     MalihuScrollbarModule,
     CardComponent,
-    Ng2SmartTableModule
+    Ng2SmartTableModule,
+    ReactiveFormsModule
   ],
   declarations: [IconComponent, CardComponent]
 })

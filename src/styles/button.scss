@@ -1,9 +1,11 @@
 @import 'variables.scss';
 
 $hover: 24;
-.btn:focus, .btn:active:focus, .btn.active:focus,
-.btn.focus, .btn:active.focus, .btn.active.focus {
-  outline: none;
+.isaqa {
+  .btn:focus, .btn:active:focus, .btn.active:focus,
+  .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+  }
 }
 
 .btn {
