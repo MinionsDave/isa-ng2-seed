@@ -6,6 +6,7 @@ import { DropdownModule } from 'ng2-bootstrap';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 import { IconComponent } from './icon/icon.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [
@@ -18,9 +19,10 @@ import { IconComponent } from './icon/icon.component';
     FormsModule,
     DropdownModule,
     IconComponent,
-    MalihuScrollbarModule
+    MalihuScrollbarModule,
+    CardComponent
   ],
-  declarations: [IconComponent]
+  declarations: [IconComponent, CardComponent]
 })
 export class SharedModule {
 }
