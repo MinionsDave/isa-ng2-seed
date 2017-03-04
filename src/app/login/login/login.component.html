@@ -1,3 +1,41 @@
-<p>
-  login works!
-</p>
+<div class="login">
+  <div class="login-block">
+    <h1>
+      ISAQA 登陆页
+    </h1>
+    <a
+      routerLink="/pages/dashboard"
+      class="auth-link">
+      还没有账号?马上注册!
+    </a>
+    <form class="form-horizontal">
+      <div class="form-group has-success">
+        <label for="username" class="control-label col-sm-2">
+          账号
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="username">
+        </div>
+      </div>
+      <div class="form-group has-error">
+        <label for="password" class="control-label col-sm-2">
+          密码
+        </label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-default">
+            登陆
+          </button>
+          <a
+            class="pull-right auth-link">
+            忘记密码?
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
