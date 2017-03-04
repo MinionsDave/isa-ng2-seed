@@ -7,7 +7,7 @@
     vertical-align: middle;
   }
 
-  color: $color-default;
+  color: $default;
 
   input {
     line-height: 1.5 !important;
@@ -26,13 +26,13 @@
 
   a.ng2-smart-sort-link {
     font-size: 14px !important;
-    color: $color-default;
+    color: $default;
     font-weight: bold;
     &.sort {
       font-weight: bold !important;
 
       &::after {
-        border-bottom-color: $color-default !important;
+        border-bottom-color: $default !important;
       }
     }
   }
@@ -48,7 +48,7 @@
 
   a.ng2-smart-action {
     font-size: 14px !important;
-    color: $color-default;
+    color: $default;
     padding: 0 5px;
     display: inline-block;
 
@@ -65,7 +65,7 @@ nav.ng2-smart-pagination-nav {
   .pagination {
     a {
       background-color: rgba(255, 255, 255, 0.1);
-      color: $color-default;
+      color: $default;
     }
 
     .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
@@ -85,7 +85,7 @@ nav.ng2-smart-pagination-nav {
 
     li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
       background-color: rgba(0, 0, 0, 0.2);
-      color: $color-default;
+      color: $default;
     }
   }
 
