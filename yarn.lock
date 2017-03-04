@@ -3031,6 +3031,16 @@ ng2-bootstrap@^1.3.3:
   dependencies:
     moment "2.17.1"
 
+ng2-completer@^1.1.0:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/ng2-completer/download/ng2-completer-1.2.0.tgz#fdf5b8a7cd1dd16934bfbaa141cf9400850741f6"
+
+ng2-smart-table@^0.6.0-1:
+  version "0.6.0-1"
+  resolved "http://registry.npm.taobao.org/ng2-smart-table/download/ng2-smart-table-0.6.0-1.tgz#c5b16ed842b6c5289aaf4d7433773cf794a49410"
+  dependencies:
+    ng2-completer "^1.1.0"
+
 ngx-malihu-scrollbar@^0.0.1:
   version "0.0.1"
   resolved "http://registry.npm.taobao.org/ngx-malihu-scrollbar/download/ngx-malihu-scrollbar-0.0.1.tgz#c00a9f1e1e9555fcfcbbcce10916c57914fcff21"

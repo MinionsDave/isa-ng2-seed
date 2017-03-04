@@ -1,0 +1,88 @@
+@import 'variables.scss';
+
+.ng2-smart-table-container table.ng2-smart-table {
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    line-height: 35px;
+    vertical-align: middle;
+  }
+
+  color: $color-default;
+
+  input {
+    line-height: 1.5 !important;
+  }
+
+  tbody {
+    tr:hover {
+      background: rgba(0, 0, 0, 0.03);
+    }
+  }
+
+  a.ng2-smart-sort-link {
+    font-size: 14px !important;
+    color: $color-default;
+    font-weight: bold;
+    &.sort {
+      font-weight: bold !important;
+
+      &::after {
+        border-bottom-color: $color-default !important;
+      }
+    }
+  }
+
+  .ng2-smart-actions {
+    width: 70px;
+    text-align: center;
+    .actions {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  a.ng2-smart-action {
+    font-size: 14px !important;
+    color: $color-default;
+    padding: 0 5px;
+    display: inline-block;
+
+    &.ng2-smart-action-add-add {
+      font-size: 25px !important;
+    }
+  }
+}
+
+nav.ng2-smart-pagination-nav {
+  display: flex;
+  justify-content: center;
+
+  .pagination {
+    a {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $color-default;
+    }
+
+    .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+      border-color: rgba(255, 255, 255, 0.5) !important
+    }
+
+    li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: $color-default;
+    }
+  }
+
+}
+
