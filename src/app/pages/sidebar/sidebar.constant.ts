@@ -2,7 +2,7 @@ export const PAGES_MENU = [
   {
     title: '首页',
     path: '/pages/dashboard',
-    icon: 'fa-home',
+    icon: 'fa-home'
   },
   {
     title: '数据表格',

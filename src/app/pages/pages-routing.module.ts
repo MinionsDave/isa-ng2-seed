@@ -17,7 +17,7 @@ const routes: Routes = [
         path: 'dashboard',
         loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule',
         data: {
-          title: '首页'
+          title: '仪表盘'
         }
       },
       {
