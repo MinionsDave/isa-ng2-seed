@@ -28,7 +28,7 @@ export class TablesComponent implements OnInit {
     },
     columns: {
       name: {
-        title: '真实名称'
+        title: '真实姓名'
       },
       username: {
         title: '用户名'

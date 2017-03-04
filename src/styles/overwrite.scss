@@ -86,41 +86,43 @@
       padding-top: 10px;
     }
 
-    .form-control {
-      color: $default;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .form-control {
+    color: $default;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    font-size: 14px;
+    transition: none;
+
+    &:focus {
       box-shadow: none;
-      font-size: 14px;
+    }
 
-      &:focus {
-        box-shadow: none;
-      }
+    &::-webkit-input-placeholder {
+      color: $default;
+      opacity: 0.7;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $default;
+      opacity: 0.7;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $default;
+      opacity: 0.7;
+    }
+    &:-ms-input-placeholder {
+      color: $default;
+      opacity: 0.7;
+    }
 
-      &::-webkit-input-placeholder {
-        color: $default;
-        opacity: 0.7;
-      }
-      &:-moz-placeholder {
-        /* Firefox 18- */
-        color: $default;
-        opacity: 0.7;
-      }
-      &::-moz-placeholder {
-        /* Firefox 19+ */
-        color: $default;
-        opacity: 0.7;
-      }
-      &:-ms-input-placeholder {
-        color: $default;
-        opacity: 0.7;
-      }
-
-      &:focus {
-        border-color: #33bcff;
-        background-color: rgba(255, 255, 255, 0.1);
-      }
+    &:focus {
+      border-color: #33bcff;
+      background-color: rgba(255, 255, 255, 0.1);
     }
   }
 }
