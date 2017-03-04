@@ -13,6 +13,10 @@ export class TablesComponent implements OnInit {
     //   cancelButtonContent: '<i class="fa fa-close"></i>',
     // },
     add: null,
+    actions: {
+      columnTitle: '操作'
+    },
+    noDataMessage: '暂无数据',
     edit: {
       editButtonContent: '<i class="fa fa-pencil-square-o""></i>',
       saveButtonContent: '<i class="fa fa-check"></i>',
@@ -24,111 +28,27 @@ export class TablesComponent implements OnInit {
     },
     columns: {
       name: {
-        title: 'Full Name'
+        title: '真实名称'
       },
       username: {
-        title: 'User Name'
+        title: '用户名'
       },
       email: {
-        title: 'Email'
+        title: '邮箱'
       }
     }
   };
 
-  data = [
-    {
-      id: 1,
-      name: 'Leanne Graham',
-      username: 'Bret',
-      email: 'Sincere@april.biz'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 2,
-      name: 'Ervin Howell',
-      username: 'Antonette',
-      email: 'Shanna@melissa.tv'
-    },
-    {
-      id: 11,
-      name: 'Nicholas DuBuque',
-      username: 'Nicholas.Stanton',
-      email: 'Rey.Padberg@rosamond.biz'
-    }
-  ];
+  data: any[] = [];
 
-  constructor() { }
+  constructor() {
+    while (this.data.length < 100) this.data.push({
+      id: 1,
+      name: '张三',
+      username: '海阔天空',
+      email: 'zhangsan@gmail.com'
+    });
+  }
 
   ngOnInit() {
   }
