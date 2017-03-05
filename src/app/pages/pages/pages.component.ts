@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs/Subject';
+
+import { SidebarService } from '../sidebar/sidebar.service';
 
 @Component({
   selector: 'app-pages',
@@ -6,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent implements OnInit {
-
-  constructor() { }
+  sidebarCollapsed: boolean;
+  constructor(private _sidebarService: SidebarService) {
+    this._sidebarService.collapsed.subscribe(sidebarCollapsed => this.sidebarCollapsed = sidebarCollapsed);
+  }
 
   ngOnInit() {
   }

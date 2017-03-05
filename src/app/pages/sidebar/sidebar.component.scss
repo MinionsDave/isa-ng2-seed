@@ -19,3 +19,15 @@
     width: 40px;
   }
 }
+
+.menu-collapsed .sidebar {
+  width: 52px;
+  .fa-angle-down {
+    opacity: 0;
+  }
+
+  .sublist {
+    width: 0;
+    height: 0;
+  }
+}

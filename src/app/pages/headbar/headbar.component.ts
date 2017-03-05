@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarService } from '../sidebar/sidebar.service';
 
 @Component({
   selector: 'app-headbar',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./headbar.component.scss']
 })
 export class HeadbarComponent implements OnInit {
-
-  constructor() { }
+  constructor(private _sidebarService: SidebarService) {
+  }
 
   ngOnInit() {
   }
 
+  sidebarReverse() {
+    this._sidebarService.reverse();
+  }
 }

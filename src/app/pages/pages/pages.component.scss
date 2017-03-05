@@ -1,4 +1,5 @@
 main {
+  $leftWidth: 50px;
   min-height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -10,14 +11,27 @@ main {
     position: relative;
 
     .main {
+
       margin-left: 180px;
       padding-top: 66px;
       min-height: 500px;
       position: relative;
+      @media (max-width: 1280px) {
+        margin-left: $leftWidth;
+      }
 
       .content {
         padding: 8px 32px 8px 40px;
       }
     }
   }
+
+  &.menu-collapsed {
+    .pages {
+      .main {
+        margin-left: $leftWidth;
+      }
+    }
+  }
+
 }

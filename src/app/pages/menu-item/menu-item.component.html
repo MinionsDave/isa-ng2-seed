@@ -10,7 +10,7 @@
   </a>
   <ul
     *ngIf="item.children"
-    class="list-unstyled">
+    class="list-unstyled sublist">
     <li *ngFor="let item of item.children" [routerLink]="item.path" routerLinkActive="selected">
       <a>
         {{ item.title }}
@@ -31,7 +31,7 @@
   </a>
   <ul
     *ngIf="item.children"
-    class="list-unstyled">
+    class="list-unstyled sublist">
     <li *ngFor="let item of item.children" [routerLink]="item.path" routerLinkActive="selected">
       <a>
         {{ item.title }}

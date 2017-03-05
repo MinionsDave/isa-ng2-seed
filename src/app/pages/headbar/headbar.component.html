@@ -2,7 +2,7 @@
   <a class="logo">
     <span>isa</span>-ng2-seed
   </a>
-  <i class="fa fa-bars collapse-menu-link"></i>
+  <i class="fa fa-bars collapse-menu-link" (click)="sidebarReverse()"></i>
   <div class="user-profile pull-right" dropdown>
     <a>
       <img src="assets/images/head.jpg" class="img-circle" dropdownToggle>
@@ -25,9 +25,9 @@
       </li>
       <li role="menuitem">
         <a class="dropdown-item" href="#">
-            <i class="fa fa-sign-out fa-fw"></i>
-            注销
-          </a>
+          <i class="fa fa-sign-out fa-fw"></i>
+          注销
+        </a>
       </li>
     </ul>
   </div>

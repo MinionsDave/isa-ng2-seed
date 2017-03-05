@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
+
 import { SharedModule } from '../shared';
+
+import { SidebarService } from './sidebar/sidebar.service';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages/pages.component';
@@ -20,6 +23,9 @@ import { PageTopComponent } from './page-top/page-top.component';
     SharedModule,
     PagesRoutingModule,
     PagesRoutingModule
+  ],
+  providers: [
+    SidebarService
   ]
 })
 export class PagesModule { }
