@@ -7,6 +7,7 @@ import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { CardComponent } from './card/card.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   imports: [
@@ -19,11 +20,12 @@ import { CardComponent } from './card/card.component';
     FormsModule,
     DropdownModule,
     MalihuScrollbarModule,
-    CardComponent,
     Ng2SmartTableModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CardComponent,
+    CheckboxComponent
   ],
-  declarations: [CardComponent]
+  declarations: [CardComponent, CheckboxComponent]
 })
 export class SharedModule {
 }
