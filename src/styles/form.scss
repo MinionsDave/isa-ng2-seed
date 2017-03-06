@@ -1,0 +1,70 @@
+.isaqa {
+  .form-group {
+    &.has-success {
+      label {
+        color: inherit;
+      }
+      .form-control {
+        &, &:focus {
+          border-color: #a2db59;
+        }
+      }
+    }
+
+    &.has-error {
+      label {
+        color: inherit;
+      }
+      .form-control {
+        border-color: #fa758e;
+        &:focus {
+          border-color: #f95372;
+        }
+      }
+    }
+
+    .control-label {
+      font-weight: 400;
+      font-size: 13px;
+      padding-top: 10px;
+    }
+  }
+
+  .form-control {
+    color: $default;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    font-size: 14px;
+    transition: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $default;
+      opacity: 0.7;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $default;
+      opacity: 0.7;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $default;
+      opacity: 0.7;
+    }
+    &:-ms-input-placeholder {
+      color: $default;
+      opacity: 0.7;
+    }
+
+    &:focus {
+      border-color: #33bcff;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
