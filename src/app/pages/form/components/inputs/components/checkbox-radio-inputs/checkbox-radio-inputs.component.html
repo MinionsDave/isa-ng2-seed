@@ -24,7 +24,8 @@
   </div>
 </div>
 <div>
-  <app-checkbox [(ngModel)]="isDisabled" [label]="'Disabled checkbox'"></app-checkbox>
+  <app-checkbox [(ngModel)]="isDisabled" [label]="'Disabled checkbox'" [disabled]="true"></app-checkbox>
+  <app-checkbox [(ngModel)]="checked" [label]="'测试'" (ngModelChange)="onChange($event)"></app-checkbox>
   <div class="radio disabled">
     <label class="custom-radio nowrap">
       <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>

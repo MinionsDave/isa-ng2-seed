@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./checkbox-radio-inputs.component.scss']
 })
 export class CheckboxRadioInputsComponent implements OnInit {
+  checked: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onChange($event) {
+    console.log($event);
   }
 
 }
