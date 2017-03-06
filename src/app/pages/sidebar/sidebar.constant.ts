@@ -15,20 +15,16 @@ export const PAGES_MENU = [
     ]
   },
   {
-    title: '表格',
-    icon: 'fa-tag',
+    title: '表单',
+    icon: 'fa-pencil-square-o',
     children: [
       {
-        title: '智能表格',
-        path: '/znbg'
+        title: '表单控件',
+        path: '/pages/form/inputs'
       },
       {
-        title: '智能表格',
-        path: '/znbg'
-      },
-      {
-        title: '智能表格',
-        path: '/znbg'
+        title: '表单布局',
+        path: '/pages/form/layouts'
       }
     ]
   },

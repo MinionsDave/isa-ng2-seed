@@ -26,6 +26,13 @@ const routes: Routes = [
         data: {
           title: '表格'
         }
+      },
+      {
+        path: 'form',
+        loadChildren: 'app/pages/form/form.module#FormModule',
+        data: {
+          title: '表单'
+        }
       }
     ]
   }
