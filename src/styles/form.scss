@@ -373,8 +373,12 @@
       padding-right: 42.5px;
     }
     label ~ .form-control-feedback {
-      top: 19px;
+      top: 25px;
       font-size: 18px;
+
+      &.fa-exclamation-triangle {
+        font-size: 16px;
+      }
     }
   }
 

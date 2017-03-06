@@ -1,9 +1,6 @@
 main {
   $leftWidth: 50px;
   min-height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .pages {
     width: 100%;
@@ -11,7 +8,6 @@ main {
     position: relative;
 
     .main {
-
       margin-left: 180px;
       padding-top: 66px;
       min-height: 500px;

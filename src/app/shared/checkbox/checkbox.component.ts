@@ -11,7 +11,7 @@ export class CheckboxComponent implements ControlValueAccessor {
   @Input() disabled: boolean;
   @Input() label: string;
   @Input() value: string;
-  @Input() baCheckboxClass: string;
+  @Input() checkboxClass: string;
 
   public model: NgModel;
   public state: boolean;
