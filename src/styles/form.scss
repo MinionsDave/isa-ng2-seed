@@ -88,6 +88,17 @@
       }
     }
 
+    &.with-label {
+      .form-group {
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        .form-control {
+          width: auto;
+        }
+      }
+    }
+
     button[type="submit"] {
       margin-left: 12px;
     }
