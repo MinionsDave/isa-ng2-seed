@@ -1,0 +1,27 @@
+@import 'variables.scss';
+
+.table.table-common {
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    line-height: 35px;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  color: $default;
+
+  input {
+    line-height: 1.5 !important;
+  }
+
+  tbody {
+    tr:hover {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    tr:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+  }
+}

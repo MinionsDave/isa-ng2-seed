@@ -4,6 +4,8 @@
 @import 'smartTables.scss';
 @import 'button.scss';
 @import 'form.scss';
+@import 'table.scss';
+@import 'pagination.scss';
 
 html {
     min-height: 100%;
@@ -26,5 +28,14 @@ html {
       background-size: cover;
       will-change: transform;
       z-index: -1;
+    }
+
+    a.a-common {
+      color: #285eb8;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #163364;
+      }
     }
 }

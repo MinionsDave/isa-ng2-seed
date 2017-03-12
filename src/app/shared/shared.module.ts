@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { DropdownModule } from 'ng2-bootstrap';
+import { DropdownModule, PaginationModule } from 'ng2-bootstrap';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
@@ -13,7 +13,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
   imports: [
     CommonModule,
     DropdownModule.forRoot(),
-    MalihuScrollbarModule.forRoot()
+    MalihuScrollbarModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   exports: [
     CommonModule,
@@ -23,7 +24,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     Ng2SmartTableModule,
     ReactiveFormsModule,
     CardComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    PaginationModule
   ],
   declarations: [CardComponent, CheckboxComponent]
 })

@@ -1,0 +1,31 @@
+nav.pagination-nav {
+  display: flex;
+  justify-content: center;
+
+  .pagination {
+    a {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $default;
+    }
+
+    .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    .page-item.disabled .page-link, .page-item.disabled .page-link:focus, .page-item.disabled .page-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+      border-color: rgba(255, 255, 255, 0.5) !important
+    }
+
+    li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: $default;
+    }
+  }
+}
