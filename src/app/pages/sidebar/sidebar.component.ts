@@ -32,7 +32,13 @@ export class SidebarComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     const $sidebar = $(this.sidebarEl.nativeElement);
-    this.malihuScrollbarService.initScrollbar($sidebar, {axis: 'y', theme: 'minimal'});
+    this.malihuScrollbarService.initScrollbar($sidebar, {
+      axis: 'y',
+      theme: 'minimal',
+      mouseWheel: {
+        preventDefault: true
+      }
+    });
     $sidebar.find('.mCSB_dragger_bar').css('margin-right', 0);
     if (this._shouldMenuCollapse()) this._sidebarService.collapse();
   }
