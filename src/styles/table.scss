@@ -7,6 +7,39 @@
     vertical-align: middle;
     font-size: 0.875rem;
     white-space: nowrap;
+
+    &.checkbox-wrapper {
+      text-align: center;
+
+      .checkbox-inline {
+        width: 16px;
+        margin-bottom: 12px;
+        height: 16px;
+      }
+    }
+
+    select {
+      width: inherit;
+
+      &.full {
+        width: 100%;
+      }
+    }
+
+    a.action {
+      font-size: 14px !important;
+      color: $default;
+      padding: 0 5px;
+      display: inline-block;
+
+      &.add {
+        height: 25px;
+        vertical-align: middle;
+        i {
+          font-size: 24px;
+        }
+      }
+    }
   }
 
   color: $default;
