@@ -9,7 +9,7 @@ import {ControlValueAccessor, NgModel} from '@angular/forms';
 })
 export class CheckboxComponent implements ControlValueAccessor {
   @Input() disabled: boolean;
-  @Input() label: string;
+  @Input() label;
   @Input() value: string;
   @Input() checkboxClass: string;
 

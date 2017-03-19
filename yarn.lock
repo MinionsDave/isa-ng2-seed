@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@angular/cli@latest":
-  version "1.0.0-rc.1"
-  resolved "http://registry.npm.taobao.org/@angular/cli/download/@angular/cli-1.0.0-rc.1.tgz#102b2bf47a9d74a581d6d1821ce2daf0594d3145"
+"@angular/cli@v1.0.0-rc.2":
+  version "1.0.0-rc.2"
+  resolved "http://registry.npm.taobao.org/@angular/cli/download/@angular/cli-1.0.0-rc.2.tgz#ca8b248ede5aaac8ca4a3d165745e93479564a4a"
   dependencies:
     "@angular/compiler" ">=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0"
     "@angular/compiler-cli" ">=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0"
     "@angular/core" ">=2.3.1 <5.0.0 || >=4.0.0-beta <5.0.0"
     "@angular/tsc-wrapped" ">=0.5.0 <5.0.0 || >=4.0.0-beta <5.0.0"
     "@ngtools/json-schema" "1.0.5"
-    "@ngtools/webpack" "1.2.12"
+    "@ngtools/webpack" "1.2.13"
     autoprefixer "^6.5.3"
     chalk "^1.1.3"
     common-tags "^1.3.1"
@@ -119,9 +119,9 @@
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/@ngtools/json-schema/download/@ngtools/json-schema-1.0.5.tgz#ad39037c70c88b245ac7267a71777646b6063d77"
 
-"@ngtools/webpack@1.2.12":
-  version "1.2.12"
-  resolved "http://registry.npm.taobao.org/@ngtools/webpack/download/@ngtools/webpack-1.2.12.tgz#19142e760a30172806acc7363e590d870cb30c26"
+"@ngtools/webpack@1.2.13":
+  version "1.2.13"
+  resolved "http://registry.npm.taobao.org/@ngtools/webpack/download/@ngtools/webpack-1.2.13.tgz#543237cd6ef49b59140114a5c0e8757b15d6e133"
   dependencies:
     enhanced-resolve "^3.1.0"
     loader-utils "^1.0.2"
@@ -135,6 +135,10 @@
 "@types/jquery@*", "@types/jquery@^2.0.40":
   version "2.0.40"
   resolved "http://registry.npm.taobao.org/@types/jquery/download/@types/jquery-2.0.40.tgz#acdd69e29b74cdec15dc3c074bcb064bc1b87213"
+
+"@types/lodash@^4.14.55":
+  version "4.14.55"
+  resolved "http://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.55.tgz#75d7d4eba020ee4103d4cbd0f2a3ef5db8f7534f"
 
 "@types/mcustomscrollbar@^2.8.30":
   version "2.8.30"
@@ -4779,19 +4783,10 @@ type-is@~1.6.14:
   version "2.0.10"
   resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.0.10.tgz#ccdd4ed86fd5550a407101a0814012e1b3fac3dd"
 
-uglify-js@2.8.x:
+uglify-js@2.8.x, uglify-js@^2.6, uglify-js@^2.7.5:
   version "2.8.7"
   resolved "http://registry.npm.taobao.org/uglify-js/download/uglify-js-2.8.7.tgz#e0391911507b6d2e05697a528f1686e90a11b160"
   dependencies:
-    source-map "~0.5.1"
-    uglify-to-browserify "~1.0.0"
-    yargs "~3.10.0"
-
-uglify-js@^2.6, uglify-js@^2.7.5:
-  version "2.7.5"
-  resolved "http://registry.npm.taobao.org/uglify-js/download/uglify-js-2.7.5.tgz#4612c0c7baaee2ba7c487de4904ae122079f2ca8"
-  dependencies:
-    async "~0.2.6"
     source-map "~0.5.1"
     uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"

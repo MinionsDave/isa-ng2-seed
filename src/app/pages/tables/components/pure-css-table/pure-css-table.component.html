@@ -1,0 +1,136 @@
+<table class="table table-common">
+  <thead>
+    <tr>
+      <th class="text-center">#</th>
+      <th class="text-center">操作</th>
+      <th>姓名</th>
+      <th>状态</th>
+      <th>手机号</th>
+      <th>身份证号</th>
+      <th>银行卡号</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">
+        <a class="action">
+          <i class="fa fa-download" title="导出"></i>
+        </a>
+      </td>
+      <td class="text-center">
+        <a
+          class="action add"
+          title="添加用户"
+          (click)="addFormShowFlag = true">
+          <i class="fa fa-plus-circle"></i>
+        </a>
+      </td>
+      <td>
+        <input type="text" class="form-control" placeholder="用户名称">
+      </td>
+      <td>
+        <select class="form-control full">
+          <option
+            *ngFor="let type of userTypes"
+            [ngValue]="type">
+            {{ type }}
+          </option>
+        </select>
+      </td>
+      <td>
+        <input type="text" class="form-control" placeholder="手机号">
+      </td>
+      <td>
+        <input type="text" class="form-control" placeholder="身份证号">
+      </td>
+      <td>
+        <input type="text" class="form-control" placeholder="银行卡号">
+      </td>
+    </tr>
+    <tr
+      *ngIf="addFormShowFlag"
+      [formGroup]="addForm">
+      <td></td>
+      <td class="text-center">
+        <a
+          class="action"
+          (click)="add($event)"
+          title="确认">
+          <i class="fa fa-check"></i>
+        </a>
+        <a
+          class="action"
+          title="取消"
+          (click)="addFormShowFlag = false">
+          <i class="fa fa-remove"></i>
+        </a>
+      </td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="用户名称"
+          formControlName="name">
+      </td>
+      <td>
+        <select
+          class="form-control full"
+          formControlName="status"
+          >
+          <option
+            *ngFor="let type of userTypes"
+            [ngValue]="type">
+            {{ type }}
+          </option>
+        </select>
+      </td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="phone"
+          placeholder="手机号">
+      </td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="idcard"
+          placeholder="身份证号">
+      </td>
+      <td>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="bankNumber"
+          placeholder="银行卡号">
+      </td>
+    </tr>
+    <tr *ngFor="let item of userList">
+      <td class="checkbox-wrapper">
+        <app-checkbox label=""></app-checkbox>
+      </td>
+      <td class="text-center">
+        <a title="删除" class="action">
+          <i class="fa fa-trash-o"></i>
+        </a>
+        <a title="操作" class="action">
+          <i class="fa fa-pencil-square-o"></i>
+        </a>
+      </td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.status }}</td>
+      <td>
+        <a class="a-common">
+          {{ item.phone }}
+        </a>
+      </td>
+      <td>{{ item.idcard}}</td>
+      <td>{{ item.bankNumber }}</td>
+    </tr>
+  </tbody>
+</table>
+<nav class="pagination-nav">
+  <pagination [boundaryLinks]="true" [totalItems]="100" [directionLinks]="false" [maxSize]="5" [(ngModel)]="currentPage" firstText="&laquo;"
+    lastText="&raquo;"></pagination>
+</nav>
