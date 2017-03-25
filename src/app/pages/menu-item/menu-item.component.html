@@ -1,5 +1,9 @@
 <li class="menu" *ngIf="item.path" [routerLink]="item.path" routerLinkActive="selected">
-  <a (click)="toggle($event)" [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
+  <a
+    [title]="item.title"
+    class="cut-with-dot"
+    (click)="toggle($event)"
+    [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
     <i
       class="fa fa-fw"
       [ngClass]="item.icon"></i>
@@ -8,7 +12,7 @@
       class="fa down fa-angle-down"
       *ngIf="item.children"></i>
   </a>
-  <ul
+  <!--<ul
     *ngIf="item.children"
     class="list-unstyled sublist">
     <li *ngFor="let item of item.children" [routerLink]="item.path" routerLinkActive="selected">
@@ -16,11 +20,14 @@
         {{ item.title }}
       </a>
     </li>
-  </ul>
+  </ul>-->
 </li>
 
 <li *ngIf="!item.path" class="menu">
-  <a (click)="toggle($event)" [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
+  <a
+    class="cut-with-dot"
+    (click)="toggle($event)"
+    [ngClass]="{'expanded': item.expanded, 'shrink': !item.expanded}">
     <i
       class="fa fa-fw"
       [ngClass]="item.icon"></i>
@@ -31,9 +38,12 @@
   </a>
   <ul
     *ngIf="item.children"
-    class="list-unstyled sublist">
+    class="list-unstyled sublist"
+    #subList>
     <li *ngFor="let item of item.children" [routerLink]="item.path" routerLinkActive="selected">
-      <a>
+      <a
+        [title]="item.title"
+        class="cut-with-dot">
         {{ item.title }}
       </a>
     </li>
