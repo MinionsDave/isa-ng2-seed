@@ -3086,6 +3086,10 @@ ngx-malihu-scrollbar@^0.0.1:
     ts-helpers "^1.1.1"
     zone.js "^0.7.2"
 
+ngx-tooltip@^0.0.9:
+  version "0.0.9"
+  resolved "http://registry.npm.taobao.org/ngx-tooltip/download/ngx-tooltip-0.0.9.tgz#9821693e7d91c57dae8189c5d6a810526890b6f6"
+
 no-case@^2.2.0:
   version "2.3.1"
   resolved "http://registry.npm.taobao.org/no-case/download/no-case-2.3.1.tgz#7aeba1c73a52184265554b7dc03baf720df80081"

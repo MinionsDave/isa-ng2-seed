@@ -48,5 +48,4 @@ export class PureCssTableComponent implements OnInit {
     this.addFormShowFlag = false;
     this.addForm.reset(this.addFormOriginValue);
   }
-
 }
