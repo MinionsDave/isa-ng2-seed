@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckboxRadioInputsComponent implements OnInit {
   checked: boolean;
+  isDisabled: boolean;
 
   constructor() { }
 

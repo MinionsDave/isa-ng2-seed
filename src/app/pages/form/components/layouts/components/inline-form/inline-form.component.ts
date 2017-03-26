@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inline-form.component.scss']
 })
 export class InlineFormComponent implements OnInit {
-
+  isRemember: boolean;
   constructor() { }
 
   ngOnInit() {

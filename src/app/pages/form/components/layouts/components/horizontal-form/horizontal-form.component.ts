@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./horizontal-form.component.scss']
 })
 export class HorizontalFormComponent implements OnInit {
-
+  isRemember: boolean;
   constructor() { }
 
   ngOnInit() {

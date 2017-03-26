@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic-form.component.scss']
 })
 export class BasicFormComponent implements OnInit {
+  isChecked: boolean;
 
   constructor() { }
 

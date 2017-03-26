@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import * as _ from 'lodash';
 
 @Component({
   selector: 'app-pure-css-table',
@@ -12,6 +11,7 @@ export class PureCssTableComponent implements OnInit {
   userList: any[] = [];
   userModelForAdd: any;
   addForm: FormGroup;
+  currentPage = 1;
   private addFormOriginValue = {
     name: '',
     status: '请选择',

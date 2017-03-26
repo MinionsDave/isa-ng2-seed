@@ -21,7 +21,7 @@ export class SidebarComponent implements AfterViewInit {
   @ViewChild('sidebar') sidebarEl: ElementRef;
 
   @HostListener('window:resize')
-  private onWindowResize() {
+  onWindowResize() {
     if (this._shouldMenuCollapse()) return this._sidebarService.collapse();
     this._sidebarService.expand();
   }
