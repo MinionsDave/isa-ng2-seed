@@ -3079,6 +3079,10 @@ ngx-malihu-scrollbar@^0.0.1:
     ts-helpers "^1.1.1"
     zone.js "^0.7.2"
 
+ngx-mydatepicker@^0.1.0:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/ngx-mydatepicker/download/ngx-mydatepicker-0.1.0.tgz#8c5ea06b55432b2c1b2f7fc51a41c301638be54b"
+
 ngx-tooltip@^0.0.9:
   version "0.0.9"
   resolved "http://registry.npm.taobao.org/ngx-tooltip/download/ngx-tooltip-0.0.9.tgz#9821693e7d91c57dae8189c5d6a810526890b6f6"

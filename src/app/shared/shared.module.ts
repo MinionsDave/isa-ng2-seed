@@ -6,6 +6,7 @@ import { DropdownModule, PaginationModule } from 'ng2-bootstrap';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { TooltipModule } from 'ngx-tooltip';
+import { NgxMyDatePickerModule } from 'ngx-mydatepicker';
 
 import { CardComponent } from './card/card.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
@@ -25,6 +26,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
     Ng2SmartTableModule,
     ReactiveFormsModule,
     TooltipModule,
+    NgxMyDatePickerModule,
     CardComponent,
     CheckboxComponent,
     PaginationModule

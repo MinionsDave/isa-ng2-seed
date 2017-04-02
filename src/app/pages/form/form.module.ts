@@ -16,12 +16,13 @@ import { BasicFormComponent } from './components/layouts/components/basic-form/b
 import { FormWithoutLabelsComponent } from './components/layouts/components/form-without-labels/form-without-labels.component';
 import { HorizontalFormComponent } from './components/layouts/components/horizontal-form/horizontal-form.component';
 import { BlockFormComponent } from './components/layouts/components/block-form/block-form.component';
+import { DatePickersComponent } from './components/inputs/components/date-pickers/date-pickers.component';
 
 @NgModule({
   imports: [
     SharedModule,
     FormRoutingModule
   ],
-  declarations: [InputsComponent, LayoutsComponent, FormComponent, StandardInputsComponent, ValidationStatesComponent, CheckboxRadioInputsComponent, InputGroupsComponent, InputSelectsComponent, InlineFormComponent, BasicFormComponent, FormWithoutLabelsComponent, HorizontalFormComponent, BlockFormComponent]
+  declarations: [InputsComponent, LayoutsComponent, FormComponent, StandardInputsComponent, ValidationStatesComponent, CheckboxRadioInputsComponent, InputGroupsComponent, InputSelectsComponent, InlineFormComponent, BasicFormComponent, FormWithoutLabelsComponent, HorizontalFormComponent, BlockFormComponent, DatePickersComponent]
 })
 export class FormModule { }

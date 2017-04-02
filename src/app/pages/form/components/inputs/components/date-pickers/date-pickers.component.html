@@ -1,0 +1,22 @@
+<form
+  [formGroup]="datePickerForm"
+  novalidate>
+  <div class="form-group">
+    <label for="datepicker">
+      datepicker
+    </label>
+    <div class="input-group datepicker" (click)="datepickerDp.openCalendar()">
+      <input
+        ngx-mydatepicker
+        placeholder="请选择"
+        [options]="datePickerOptions"
+        #datepickerDp="ngx-mydatepicker"
+        class="form-control"
+        formControlName="datepicker"
+        disabled>
+      <div class="input-group-addon">
+        <i class="fa fa-calendar form-control-feedback"></i>
+      </div>
+    </div>
+  </div>
+</form>

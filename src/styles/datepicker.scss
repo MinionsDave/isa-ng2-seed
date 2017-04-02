@@ -1,0 +1,38 @@
+@import 'variables.scss';
+.input-group.datepicker {
+  width: auto;
+  margin-bottom: 0;
+  width: 140px;
+
+  .ngxmdp .selector {
+    top: 32px;
+  }
+
+  input {
+    border-right: none;
+
+    &[disabled] {
+      color: $default;
+      border-color: $input-border;
+      cursor: initial;
+    }
+  }
+
+  .input-group-addon {
+    background: $input-background;
+    color: $default;
+    position: relative;
+    cursor: pointer;
+    border-color: $input-border;
+
+    i {
+      position: absolute;
+      top: -3px;
+      right: 0;
+    }
+  }
+}
+
+.isaqa .form-inline.with-label .form-group .input-group.datepicker input {
+  width: 120px;
+}
