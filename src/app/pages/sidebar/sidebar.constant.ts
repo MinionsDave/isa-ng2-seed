@@ -29,6 +29,16 @@ export const PAGES_MENU = [
     ]
   },
   {
+    title: 'ui组件',
+    icon: 'fa-laptop',
+    children: [
+      {
+        title: '弹窗',
+        path: '/pages/uiFeatures/modal'
+      }
+    ]
+  },
+  {
     title: '表格',
     icon: 'fa-tag',
     children: [

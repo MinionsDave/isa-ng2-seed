@@ -1,0 +1,35 @@
+<div
+  bsModal
+  #modal="bs-modal"
+  class="modal fade"
+  tabindex="-1"
+  (keyup.enter)="confirm()">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">请确认</h4>
+        <button type="button" class="close pull-right" (click)="modal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ng-content></ng-content>
+        {{ content }}
+      </div>
+      <div class="modal-footer">
+        <button
+          class="btn btn-primary"
+          type="button"
+          (click)="confirm()">
+          确认
+        </button>
+        <button
+          class="btn btn-default"
+          type="button"
+          (click)="modal.hide()">
+          取消
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

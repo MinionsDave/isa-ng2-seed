@@ -33,6 +33,10 @@ const routes: Routes = [
         data: {
           title: '表单'
         }
+      },
+      {
+        path: 'uiFeatures',
+        loadChildren: 'app/pages/ui-features/ui-features.module#UiFeaturesModule'
       }
     ]
   }
